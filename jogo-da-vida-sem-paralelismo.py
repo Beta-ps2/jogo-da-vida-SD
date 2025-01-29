@@ -31,21 +31,7 @@ pygame.display.set_caption("Jogo da Vida sem paralelismo")
 
 # Função para inicializar a grade
 def inicializar_grade():
-    grade_fixa = np.zeros((LINHAS, COLUNAS))  # uma grade vazia
-
-    # Supondo que LINHAS e COLUNAS sejam suficientemente grandes para suportar um quadrado de 15x15
-    tamanho_quadrado = 50
-
-    # Ajuste a posição inicial do quadrado na grade
-    inicio_linha = LINHAS // 2 - tamanho_quadrado // 2
-    inicio_coluna = COLUNAS // 2 - tamanho_quadrado // 2
-
-    # Preencher a grade com 1s no formato de um quadrado de 15x15
-    for i in range(inicio_linha, inicio_linha + tamanho_quadrado):
-        for j in range(inicio_coluna, inicio_coluna + tamanho_quadrado):
-            grade_fixa[i, j] = 1
-
-    return grade_fixa
+return np.zeros((LINHAS, COLUNAS))
 
 # Função para desenhar a grade com fundo alternado na altura e células vivas preenchidas de branco
 def desenhar_grade(grade):
