@@ -2,4 +2,4 @@ Códigos e resultados obtidos no trabalho de sistemas distribuido. O qual consis
 * Pygame para interface gráfica;
 * Numpy para operações matemáticas;
 * ThreadPoolExecutor para implementar paralelismo;
-* Pycharm e VSC com IDE.
+* Pycharm e VSC como IDE.
